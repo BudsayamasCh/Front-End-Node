@@ -15,12 +15,13 @@ const base_url = "http://node57081-budsayamas-noderest.proen.app.ruk-com.cloud";
 
 
 // Set the template engine
+app.set("views", path.join(__dirname,"/public/views"));
 app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
 
 // Serve static files
-app.use(express.static(__dirname + '/public/views'));
+app.use(express.static(__dirname + '/public'));
 
 app.get("/", async (req, res) => {
     try{
