@@ -11,9 +11,10 @@ const path = require("path");
 // const base_url = "https;//api.example.com"
 
 //const base_url = "http://localhost:3000";
-//const base_url = "http://node57081-budsayamas-noderest.proen.app.ruk-com.cloud";
+const base_url = "http://node57081-budsayamas-noderest.proen.app.ruk-com.cloud";
 //const dbUrl = 'postgres://webadmin: MAIgs f81141@node40729-noderest.proen.app.ruk-com.cloud: 11478/Books'
-const dbUrl = 'postgres:///webadmin: MAIgs f81141@node57086-budsayamas-noderest.proen.app.ruk-com.cloud:11812/Books'
+
+
 
 // Set the template engine
 app.set("views", path.join(__dirname,"/public/views"));
